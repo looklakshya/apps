@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Flutter (Linux)",
+            "program": "lib/main.dart",
+            "deviceId": "linux",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
