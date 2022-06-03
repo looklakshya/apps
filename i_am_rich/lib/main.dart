@@ -16,7 +16,7 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Look into the Eye",
+            "I am Rich",
             // "I am Rich",
             style: TextStyle(fontFamily: "Ubuntu Regular", fontSize: 25),
           ),
@@ -25,11 +25,10 @@ void main() {
         ),
         body: const Center(
           child: Image(
-            image: NetworkImage(
-                "https://cdn.pixabay.com/photo/2020/06/01/22/23/eye-5248678__340.jpg"),
+            image: AssetImage("images/diamond.png"),
           ),
         ),
-        backgroundColor: Colors.blueGrey.shade600,
+        backgroundColor: Colors.blueGrey.shade800,
       ),
     ),
   );
