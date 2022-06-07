@@ -10,29 +10,34 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home Screen"),
+        title: const Text("Shop here"),
+        centerTitle: true,
       ),
-      body: SizedBox(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              "That's my home screen",
-              style: TextStyle(fontSize: 25),
-            ),
-            // ignore: deprecated_member_use
-            FlatButton(
-              onPressed: () {
-                Get.to(DetailScreen());
-                // Get.off(DetailScreen());
-              },
-              color: Colors.black,
-              textColor: Colors.white,
-              child: Text("Go to details"),
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(10),
+                color: Colors.blueGrey.shade200,
+                child: Text("Potato"),
+              ),
+              const Image(image: AssetImage("images/Potato.jpeg")),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(10),
+                color: Colors.blueGrey.shade200,
+                child: Text("Tomato"),
+              ),
+              const Image(image: AssetImage("images/tomato.jpeg")),
+            ],
+          ),
+        ],
       ),
     );
   }
