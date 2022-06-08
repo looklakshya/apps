@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,12 +20,46 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.teal.shade900,
           ),
           backgroundColor: Colors.teal.shade700,
-          body: Container(
-            margin: EdgeInsets.all(30),
-            padding: EdgeInsets.all(5),
-            alignment: Alignment.center,
-            color: Colors.teal.shade100,
-            child: const Text("This is me!"),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                color: Colors.red,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.orange,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.yellow,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.green,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.indigo,
+                height: 79,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.purple,
+                height: 79,
+                width: double.infinity,
+              ),
+            ],
           ),
         ),
       ),
